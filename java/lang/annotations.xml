@@ -1,0 +1,11 @@
+<root>
+    <item name='java.lang.Class java.lang.Class&lt;?&gt; getComponentType()'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+    <item name='java.lang.Deprecated'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+    <item name='java.lang.Number'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

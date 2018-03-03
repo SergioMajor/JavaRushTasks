@@ -1,0 +1,39 @@
+package com.javarush.task.task27.task2712.kitchen;
+
+import java.util.Arrays;
+
+public enum Dish {
+    Fish(25),
+    Steak(30),
+    Soup(15),
+    Juice(5),
+    Water(3);
+
+    private int duration;
+
+    Dish(int minutes) {
+        this.duration = minutes;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public static String allDishesToString() {
+        String dishes = Arrays.asList(Dish.values()).toString();
+        dishes = dishes.substring(1, dishes.length() - 1);
+
+        return dishes;
+    }
+
+    public static Dish existDish(String nameDish) throws NullPointerException{
+
+        for (Dish dish : Dish.values()) {
+            if (nameDish.equals(dish.toString())) {
+                return dish;
+            }
+        }
+
+        return null;
+    }
+}
